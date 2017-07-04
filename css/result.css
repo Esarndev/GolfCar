@@ -1,0 +1,12 @@
+body {
+
+}
+
+.navbar {
+    margin-bottom : 0 !important; 
+}
+
+.brand, .price{
+    margin-left: 10px;
+}
+
