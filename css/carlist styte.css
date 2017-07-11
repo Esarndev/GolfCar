@@ -1,0 +1,29 @@
+.container-fluid{
+  background-color: #f9f9f9;
+  color: #f9f9f9;
+}
+
+.box{
+ 
+
+    margin-top: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+        
+}
+.boximg{
+
+width: 100%;
+height: 100%;
+border-style: groove;
+}
+.col-sm-5{
+    width: 180px;
+    height: 150px;
+    
+        
+}
+.col-sm-7{
+      margin-left: 350px;  
+}
