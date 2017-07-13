@@ -2,6 +2,148 @@ body {
     overflow-x: hidden
 }
 
+.price{
+    margin: 5px 0;
+    text-align: center;
+}
+
+.btn-search {
+    width: 80%;
+}
+
+.filter {
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.car-list {
+    background-color: #f8f8f8;
+    padding: 10px 10px;
+    margin: 5px 0;
+}
+
+.col-md-9 {
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.exam-img {
+    max-width: 100%;
+}
+
+.text-center-min {
+    text-align: right;
+}
+
+.non-float {
+    float: none !important;
+}
+
+.wrap {
+    max-height: 100vh; 
+    overflow: auto;
+}
+
+.btn {
+    width: 100% !important;
+}
+
+label {
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.line {
+    border-top: 1px solid #888;
+    margin: 5px 0;
+}
+
+.detail {
+    background-color: #ddd;
+    margin: 0;
+    padding-top: 10px !important;
+    color: #333;
+    border-radius: 5px;
+}
+
+.save {
+    padding: 5px 0;
+}
+/*
+ * SM
+ * --------------------------------------------------
+ */
+@media screen and (min-width: 768px) {
+}
+
+/*
+ * MD
+ * --------------------------------------------------
+ */
+@media screen and (min-width: 992px) {
+    .save {
+        padding: 0;
+    }
+
+    .panel-heading {
+        margin-bottom: 0px;
+        padding: 10px 15px;
+    }
+
+    .detail {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0 !important;
+    }
+
+    .price{
+        margin: 10px 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-button: 10px;
+    }
+
+    .text-center-min {
+        text-align: center;
+        padding: 0;
+    }
+
+    .text-left-min {
+        text-align: left;
+    }
+
+    .text-right-min {
+        text-align: right;
+        padding: 0;
+    }
+
+    .filter {
+        padding: 10px 10px;
+        margin: 5px 0;
+        background-color: #f8f8f8;
+    }
+}
+
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  height: 6em;
+  margin-top: -3em;
+}
+
 .non-padding {
     padding: 0 !important;
 }
@@ -10,19 +152,19 @@ body {
     margin: 0 !important;
 }
 
+.non-float {
+    float: none !important;
+}
+
 .navbar {
-    margin-bottom : 0 !important;
-    display: block !important;
+    top: 15px;
+    margin-bottom: 30px !important;
     border-style: none !important;
     border-radius: 0 !important;
 }
 
-.brand, .price{
-    margin-left: 10px;
-}
-
-.btn-search {
-    width: 80%;
+.navbar-default, .navbar-collapse {
+    border-style: none !important;    
 }
 
 .navbar-toggle-center {
@@ -47,51 +189,16 @@ body {
 
 .panel-footer {
     margin-top: 10px;
+    padding: 0 15px;
 }
 
 .panel-heading {
-    margin-bottom: 10px;
-}
-
-.filter {
-    padding: 10px 10px;
-    margin: 5px 0;
-    background-color: #f8f8f8;
-}
-
-.car-list {
-    background-color: #f8f8f8;
-    padding: 10px 10px;
-    margin: 5px 0;
-}
-
-.col-md-9 {
-}
-
-.right {
-    float: right;
-    text-align: right;
-}
-
-.exam-img {
-    max-width: 100%;
+    margin-bottom: 0px;
+    padding: 0 15px;
 }
 
 .container-fluid {
     padding: 0px;
-}
-
-.text-center-min {
-    text-align: right;
-}
-
-.non-float {
-    float: none !important;
-}
-
-.wrap {
-    max-height: 100vh; 
-    overflow: auto;
 }
 
 .foot-link>li {
@@ -109,87 +216,63 @@ body {
     color: #333333;
 }
 
-label {
-    margin-left: 10px;
-}
-
 @media screen and (min-width: 1366px) {
-  h4 {
-     font-size: 25px;
-  }
-
-  h3 {
-      font-size: 30px;
-  }
-
-  .text-center-min {
-    text-align: center;
-    padding: 0;
-  }
-
-  .text-left-min {
-      text-align: left;
-  }
-
-  .text-right-min {
-      text-align: right;
-      padding: 0;
-  }
+    /* ใส่คลาสที่ต้องการให้ทำงานเฉพาะจอคอมเท่านั้น */
+    .panel-heading {
+        margin-bottom: 10px;
+    }
 }
 
-/*
- * Off Canvas
- * --------------------------------------------------
- */
-@media screen {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
+select, .select {
+    width: 50%;
+    margin-top: 5px;
+    padding-left: 15%;
+}
 
-  .row-offcanvas-right {
-    right: 0;
-  }
+.set-filter {
+    margin-left: 40px;
+}
 
-  .row-offcanvas-left {
-    left: 0;
-  }
+a {
+    color: #333;
+}
 
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
-  }
+.modal-header {
+    background-color:#dddddd;
+}
 
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
     top: 0;
-    width: 50%; /* 6 columns */
-  }
+    left: 0;
+    z-index: 10000;
 }
 
-.outer {
-  position: relative;
+#sticky {
+    padding: 10px 0;
+    width: 100%;
 }
 
-.inner {
-  position: absolute;
-  top: 50%;
-  height: 6em;
-  margin-top: -3em;
+.car-filter {
+    background-color: #333;
 }
 
+.car-filter>div>label {
+    color: #fff;
+}
+
+.search-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0 20px 40px; 
+}
+
+.search-header>h3 {
+    margin-top: 0 !important;
+}
+
+.text-detail {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
