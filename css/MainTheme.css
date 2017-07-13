@@ -1,0 +1,69 @@
+.non-padding {
+    padding: 0 !important;
+}
+
+.non-margin {
+    margin: 0 !important;
+}
+
+.non-float {
+    float: none !important;
+}
+
+.navbar {
+    margin-bottom : 0 !important;
+    display: block !important;
+    border-style: none !important;
+    border-radius: 0 !important;
+}
+
+.navbar-toggle-center {
+    position: relative;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.panel {
+    margin: 0 !important;
+}
+
+.panel-body {
+    padding: 0 !important;
+}
+
+.panel-footer {
+    margin-top: 10px;
+}
+
+.panel-heading {
+    margin-bottom: 10px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.foot-link>li {
+    display: inline;
+    float: right;
+    margin: 10px 10px;
+}
+
+.foot-link>li>a {
+    color: #777777;
+}
+
+.foot-link>li>a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media screen and (min-width: 1366px) {
+    /* ใส่คลาสที่ต้องการให้ทำงานเฉพาะจอคอมเท่านั้น */
+}

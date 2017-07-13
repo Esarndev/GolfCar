@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/result.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/carlist styte.css">
+        
+        <link rel="stylesheet" href="./css/w3.css">
+	</head>
+	<body>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header row">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div>
+                                <a class="navbar-brand" href="">รถถูก.com</a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="menuNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a>สมัครสมาชิก</a></li>
+                                <li><a>เข้าสู่ระบบ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="panel-body">
+                <div class="container">
+                    <div class="col-md-12 set-height">
+                        <div class="profile-img">
+                            <center>
+                             <i class="fa fa-user fa-5x" aria-hidden="true"></i>  
+                             <center> 
+                        </div>
+                        <div>
+                            <h1 class="name hidden-xs">ห่ะหมี หรรมน้อย</h1>
+                            <h2 class="name visible-xs">ห่ะหมี หรรมน้อย</h2>
+                        </div>          
+                    </div>
+                    <div class="col-md-12 non-padding set-tab">
+     
+
+                        <div class="Tool  w3-bar w3-#DDDDDD visible-md visible-lg">
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')"><i class="fa fa-heart" aria-hidden="true"></i> Car list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')"><i class="fa fa-usd" aria-hidden="true"></i> Sell list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')"><i class="fa fa-car" aria-hidden="true"> Sell </i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')"><i class="fa fa-user" aria-hidden="true"> Profile</i></button>
+                        </div>
+                        
+                        <div class="w3-bar w3-gray visible-sm visible-xs">
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')"><i class="fa fa-usd" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')"><i class="fa fa-car" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')"><i class="fa fa-user" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div id="Car list" class="w3-container city">
+                             <div class="panel-body">
+                                <div class="container-fluid">
+                                    <div class="col-md-12 wrap">
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_1.jpg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic FB (ปี 12-16) E 1.8 AT Sedan ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                                     <button type="button"  class="btn btn-danger">ลบ</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>483,000 บาท</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_2.jpeg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic 1.8 FB (ปี 12-16) E(as) ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="" value=""><label>&nbsp;เปรียบเทียบ</label>
+                                                     <button type="button"  class="btn btn-danger">ลบ</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>489,000 บาท</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_3.jpeg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic 1.8 FB (ปี 12-16) E(as) ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                                     <button type="button"  class="btn btn-danger">ลบ</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>498,000 บาท</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_1.jpg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic FB (ปี 12-16) E 1.8 AT Sedan ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                                     <button type="button"  class="btn btn-danger">ลบ</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>483,000 บาท</h3>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div id="Sell lis" class="w3-container city" style="display:none">
+                            <div class="panel-body">
+                                <div class="container-fluid">
+                                    <div class="col-md-12 wrap">
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_1.jpg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic FB (ปี 12-16) E 1.8 AT Sedan ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div class="">
+                                                    <button type="button" style="margin-top:15px" class="btn btn-success ">แก้ไขข้อมูลการขาย</button>
+                                                     <button type="button" style="margin-top:15px" class="btn btn-danger">ยกเลิกการขาย</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>483,000 บาท</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 car-list">
+                                            <div class="col-md-3 text-center">
+                                                <img src="img/car_2.jpeg" class="exam-img">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                                </div>
+                                                <div class="hidden-xs">
+                                                    <p>Honda Civic 1.8 FB (ปี 12-16) E(as) ปี 12 รถสวยไมล์น้อย 6x,xxx สวยจริงตามภาพ</p>
+                                                </div>
+                                                <div class="">
+                                                   <button type="button" style="margin-top:15px" class="btn btn-success ">แก้ไขข้อมูลการขาย</button>
+                                                     <button type="button" style="margin-top:15px" class="btn btn-danger">ยกเลิกการขาย</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center-min">
+                                                <h3>489,000 บาท</h3>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div id="Sell" class="w3-container city" style="display:none">
+                             <form >
+                            <div  class="One col-md-5">
+                                    <h3><p1>ขั้นตอนที่1/4</p1> : รายละเอียดรถ</h3>
+                                    <label for="sel1">ยี่ห้อ <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>Toyota</option>
+                                        <option>Isusu</option>
+                                        <option>Ford</option>
+                                        <option>Honda</option>
+                                        <option>BMW</option>
+                                    </select>
+                                    <label for="sel1">รุ่น <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>Camry</option>
+                                    </select>
+                                    <label for="sel1">ปีที่ผลิต <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                    </select>
+                                    <label for="sel1">ระบบเกียร์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>กระปุก</option>
+                                        <option>automatic</option>    
+                                    </select>
+                                    <label for="sel1">โฉมรถยนต์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>(ปี 12-16)</option>  
+                                    </select>
+                                    <label for="sel1">รายละเอียดรุ่น <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>Hybrid</option>
+                                        <option>G</option>   
+                                    </select>
+                                        <label for="sel1">เลขไมล์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>อื่นๆ</option>
+                                        <option>0-5k</option>
+                                        <option>5-10k</option> 
+                                        <option>15-20k</option> 
+                                        <option>20-25k</option>
+                                        <option>30-35k</option> 
+                                    </select>
+                                        <label for="sel1">ปีที่จดทะเบียน *:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                        <option>2014</option>
+                                        <option>2013</option>
+                                        <option>2012</option>
+                                    </select>
+                                    <label for="sel1">สี <p1>*</p1>:</label>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>สีขาว</option>
+                                        <option>สีทอง</option>
+                                        <option>สีเทา</option>
+                                        <option>สีเงิน</option>
+                                        <option>สีน้ำเงิน</option>
+                                        <option>สีฟ้า</option>
+                                        <option>สีเขียว</option>
+                                        <option>สีดำ</option>
+                                        <option>สีครีม</option>
+                                        <option>สีน้ำตาล</option>
+                                        <option>สีเหลือง</option>
+                                        <option>สีส้ม</option>
+                                        <option>สีแดง</option>
+                                        <option>สีชมพู</option>
+                                        <option>สีม่วง</option>
+                                        <option>สีอื่นๆ</option>
+                                    </select><br><br><br>
+                                    <label for="sel1">ราคาที่ต้องการขาย <p1>*</p1>:</label>
+                                    <input type="text"  class="form-control" value="กรุณากรอกราคา"><br>
+                                    <label for="sel1">ข้อความโฆษณารถของคุณ <p1>*</p1>:</label><br>
+                                     <textarea>ข้อความ....</textarea>
+                                       <label for="sel1">พื้นที่ *:</label>
+                                    <select class="form-control" id=""><br>
+                                        <option>กรุณาเลือก</option>
+                                        <option>กรุงเพทและปริมณฑล</option>
+                                        <option>ภาคเหนือ</option>
+                                        <option>ภาคใต้</option>
+                                        <option>ภาคกลาง</option>
+                                        <option>ภาคตะวันตก</option>
+                                        <option>ภาคตะวันตก</option>
+                                        <option>ภาคอีสาน</option>
+                                       
+                                    </select>       <br>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>ขอนแก่น</option>
+                                        <option>อุดรธานี</option>
+                                        <option>ยโสธร</option>
+                                    </select>  <br>
+                                    <select class="form-control" id="">
+                                        <option>กรุณาเลือก</option>
+                                        <option>อำเภอเมือง</option>
+                                        <option>อำเภอเมืองพล</option>
+                                        <option>อำเภอชุมแพ</option>
+                                    </select>  <br>
+                                </div>
+                         <div class="col-md-12 line"><br>
+                               <div>
+                                    <label for="sel1"><h3><p1>ขั้นตอนที่ 2/4</p1> : รูป</h3></label><br>
+                                   <button class="Two btn " type="button" style="margin-top:15px " > + เพิ่มรูปภาพ </button>
+                               </div><br>
+                               <div>
+                                   <p>คุณสามารถอัพโหลดรูปได้ 5-21 รูป ใบประกาศรถที่มีคุณภาพรูปภาพที่ดีจะช่วยให้ขายรถได้เร็วขึ้น 
+                                       นามสกุลไฟล์รูปภาพที่รองรับคือ JPG และ JPEG เท่านั้น โดยแต่ละไฟล์รูปภาพจะต้องมีขนาดระหว่าง
+                                        10 KB แต่ไม่เกิน 12 MB.</p>
+                               </div><br>
+                               <div class="col-md-4">
+                                   <center>
+                                    <div class="profile-img col-md-12" >
+
+                                    </div>
+                                    <div class="P-img col-md-12">
+                                            <button class="btn" type="button" style="backgound-color : #DDDDDD"> + เพิ่มบัตรประชาชน</button>
+                                    </div>
+                               </div>
+                               <div class="col-md-4">
+                                    <center>
+                                    <div class="profile-img col-md-12" >
+                                    </div>
+                                    <div class="P-img col-md-12">
+                                            <button class="btn" type="button" style="backgound-color : #DDDDDD"> + เพิ่มสำเนาทะเบียรถ</button>
+                                    </div>
+                                </div>
+                                <div class="Three col-md-4">
+                                    <p><p1>*</p1> เอกสารยืนยันการเป็นเจ้าของรถใช้เพื่อตรวจสอบเท่านั้น จะไม่ถูกแสดงบนหน้าเว็บไซต์</p>
+
+                                     <p><p1>*</p1> ชื่อ และนามสกุล ในบัตรประชาชน และสำเนาทะเบียนรถต้องเป็นชื่อเดียวกัน</p>
+                                </div>
+                         </div> <br>
+                          <div class="col-md-12 line"><br>
+                            <div class="Three col-md-6">
+                            <label for="sel1"><h3><p1>ขั้นตอนที่ 3/4</p1> : ข้อมูลผู้ขาย</h3></label><br>
+                                <label for="sel1">ชื่อ <p1>*</p1>:</label>
+                                <input type="text"  class="form-control" value="ห่ะหมี"><br>
+                                 <label for="sel1">นามสกุล <p1>*</p1>:</label>
+                                <input type="text"  class="form-control" value="หรรมน้อย"><br>
+                                 <label for="sel1">อีเมล์ <p1>*</p1>:</label>
+                                <input type="e-mail"  class="form-control" value="bfsn1234@gmail.com"><br>
+                                 <label for="sel1">เบอร์โทรศัพท์ <p1>*</p1>:</label>
+                                <input type="text"  class="form-control" value="083-0584386"><br>
+                            </div>
+                        </div> <br>
+                          <div class="col-md-12 line"><br>
+                            <label for="sel1"><h3><p1>ขั้นตอนที่ 4/4</p1> : กดยืนยันเพื่อประกาศขายรถ</h3></label><br>
+                            <p>คุณยืนยันที่จะทำตามข้อกำหนดและ <p1>เงื่อนไข</p1> ของบริษัท ห่ะหมี WTF (ไทยแลนด์) จำกัด </p>
+                             <button class="btn" type="button" style="backgound-color : #D81920">กดยืนยันเพื่อประกาศขายรถ</button>
+                          </div>          
+                         </form>
+                        </div>
+                         <div class="col-md-12 line"><br>
+                         </div><br><br>
+                             
+          
+                        <div id="Profile" class="w3-container city" style="display:none">
+                            <h2>Tokyo</h2>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+
+                        <script>
+                            function openCity(cityName) {
+                                var i;
+                                var x = document.getElementsByClassName("city");
+                                for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";  
+                                }
+                                document.getElementById(cityName).style.display = "block";  
+                            }
+                        </script>
+                    </div>
+                        
+                </div>
+            </div>
+         </div>
+        
+            <div class="panel-footer">
+                <div class="container-fluid">                                            
+                    <ul class="foot-link">
+                        <li><a>เกี่ยวกับเรา</a></li>
+                        <li><a>ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
