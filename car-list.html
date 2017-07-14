@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/carlist styte.css">
         
+
         <link rel="stylesheet" href="./css/w3.css">
 	</head>
 	<body>
@@ -37,36 +38,46 @@
                     </div>
                 </nav>
             </div>
+            <!-- -->
             <div class="panel-body">
                 <div class="container">
                     <div class="col-md-12 set-height">
                         <div class="profile-img">
                             <center>
-                             <i class="fa fa-user fa-5x" aria-hidden="true"></i>  
-                             <center> 
+                             <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                             <center>
                         </div>
                         <div>
                             <h1 class="name hidden-xs">ห่ะหมี หรรมน้อย</h1>
                             <h2 class="name visible-xs">ห่ะหมี หรรมน้อย</h2>
-                        </div>          
+                        </div>
                     </div>
-                    <div class="col-md-12 non-padding set-tab">
-     
+                    <!-- -->     
+                      
 
+                    <div  class="col-md-12 non-padding set-tab">
                         <div class="Tool  w3-bar w3-#DDDDDD visible-md visible-lg">
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')"><i class="fa fa-heart" aria-hidden="true"></i> Car list </button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')"><i class="fa fa-usd" aria-hidden="true"></i> Sell list </button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')"><i class="fa fa-car" aria-hidden="true"> Sell </i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')"><i class="fa fa-user" aria-hidden="true"> Profile</i></button>
-                        </div>
-                        
-                        <div class="w3-bar w3-gray visible-sm visible-xs">
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')"><i class="fa fa-usd" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')"><i class="fa fa-car" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')"><i class="fa fa-user" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')" id="car-list"><i class="fa fa-heart" aria-hidden="true"></i> Car list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')" id="sell-list"><i class="fa fa-usd" aria-hidden="true"></i> Sell list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')" id="sell"><i class="fa fa-car" aria-hidden="true"> Sell </i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')" id="profile"><i class="fa fa-user" aria-hidden="true"> Profile</i></button>
                         </div>
 
+                        <div class="Tool w3-bar w3-#DDDDDD visible-sm visible-xs">
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')" id="car-list"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')" id="sell-list"><i class="fa fa-usd" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')" id="sell"><i class="fa fa-car" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')" id="profile"><i class="fa fa-user" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div class="Tool w3-bar w3-#DDDDDD sec-panel  " id="panel">
+                            <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'general')">ทั่วไป</button>
+                            <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'password')">เปลี่ยนรหัส</button>
+                        </div>
+                      
+                     
+
+                    <!-- -->
                         <div id="Car list" class="w3-container city">
                              <div class="panel-body">
                                 <div class="container-fluid">
@@ -150,11 +161,12 @@
                                             <div class="col-md-3 text-center-min">
                                                 <h3>483,000 บาท</h3>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
+                    <!-- -->
 
                         <div id="Sell lis" class="w3-container city" style="display:none">
                             <div class="panel-body">
@@ -199,18 +211,19 @@
                                             <div class="col-md-3 text-center-min">
                                                 <h3>489,000 บาท</h3>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
+                    <!-- -->
 
                         <div id="Sell" class="w3-container city" style="display:none">
                              <form >
                             <div  class="One col-md-5">
                                     <h3><p1>ขั้นตอนที่1/4</p1> : รายละเอียดรถ</h3>
                                     <label for="sel1">ยี่ห้อ <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <select class="form-control" id="sell-brand">
                                         <option>กรุณาเลือก</option>
                                         <option>Toyota</option>
                                         <option>Isusu</option>
@@ -219,7 +232,7 @@
                                         <option>BMW</option>
                                     </select>
                                     <label for="sel1">รุ่น <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <select class="form-control" id="sell-model" disabled>
                                         <option>กรุณาเลือก</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -240,28 +253,28 @@
                                     <select class="form-control" id="">
                                         <option>กรุณาเลือก</option>
                                         <option>กระปุก</option>
-                                        <option>automatic</option>    
+                                        <option>automatic</option>
                                     </select>
                                     <label for="sel1">โฉมรถยนต์ <p1>*</p1>:</label>
                                     <select class="form-control" id="">
                                         <option>กรุณาเลือก</option>
-                                        <option>(ปี 12-16)</option>  
+                                        <option>(ปี 12-16)</option>
                                     </select>
                                     <label for="sel1">รายละเอียดรุ่น <p1>*</p1>:</label>
                                     <select class="form-control" id="">
                                         <option>กรุณาเลือก</option>
                                         <option>Hybrid</option>
-                                        <option>G</option>   
+                                        <option>G</option>
                                     </select>
                                         <label for="sel1">เลขไมล์ <p1>*</p1>:</label>
                                     <select class="form-control" id="">
                                         <option>กรุณาเลือก</option>
                                         <option>อื่นๆ</option>
                                         <option>0-5k</option>
-                                        <option>5-10k</option> 
-                                        <option>15-20k</option> 
+                                        <option>5-10k</option>
+                                        <option>15-20k</option>
                                         <option>20-25k</option>
-                                        <option>30-35k</option> 
+                                        <option>30-35k</option>
                                     </select>
                                         <label for="sel1">ปีที่จดทะเบียน *:</label>
                                     <select class="form-control" id="">
@@ -306,7 +319,7 @@
                                         <option>ภาคตะวันตก</option>
                                         <option>ภาคตะวันตก</option>
                                         <option>ภาคอีสาน</option>
-                                       
+
                                     </select>       <br>
                                     <select class="form-control" id="">
                                         <option>กรุณาเลือก</option>
@@ -327,7 +340,7 @@
                                    <button class="Two btn " type="button" style="margin-top:15px " > + เพิ่มรูปภาพ </button>
                                </div><br>
                                <div>
-                                   <p>คุณสามารถอัพโหลดรูปได้ 5-21 รูป ใบประกาศรถที่มีคุณภาพรูปภาพที่ดีจะช่วยให้ขายรถได้เร็วขึ้น 
+                                   <p>คุณสามารถอัพโหลดรูปได้ 5-21 รูป ใบประกาศรถที่มีคุณภาพรูปภาพที่ดีจะช่วยให้ขายรถได้เร็วขึ้น
                                        นามสกุลไฟล์รูปภาพที่รองรับคือ JPG และ JPEG เท่านั้น โดยแต่ละไฟล์รูปภาพจะต้องมีขนาดระหว่าง
                                         10 KB แต่ไม่เกิน 12 MB.</p>
                                </div><br>
@@ -371,36 +384,121 @@
                             <label for="sel1"><h3><p1>ขั้นตอนที่ 4/4</p1> : กดยืนยันเพื่อประกาศขายรถ</h3></label><br>
                             <p>คุณยืนยันที่จะทำตามข้อกำหนดและ <p1>เงื่อนไข</p1> ของบริษัท ห่ะหมี WTF (ไทยแลนด์) จำกัด </p>
                              <button class="btn" type="button" style="backgound-color : #D81920">กดยืนยันเพื่อประกาศขายรถ</button>
-                          </div>          
+                          </div>
                          </form>
-                        </div>
-                         <div class="col-md-12 line"><br>
-                         </div><br><br>
-                             
-          
-                        <div id="Profile" class="w3-container city" style="display:none">
-                            <h2>Tokyo</h2>
-                            <p>Tokyo is the capital of Japan.</p>
-                        </div>
+                        </div><br>
 
+                    <!-- -->
+                        <div id="Profile" class=" w3-container city" style="display:none ">
+                          
+                            <div id="general" class="tabcontent">
+                                    <form>
+                                        <div class="col-md-12">
+                                            <div class="col-md-5">
+                                                <label for="sel1">ชื่อผู้ใช้ & รหัสผ่าน</label>
+                                                <input type="text"  class="form-control" value="bfsn1234@gmail.com"><br>
+                                                <button type="button" class="btn btb-info">เปลี่ยนรหัส</button><br><br>
+                                            </div>    
+                                        </div>   
+                                          <div class="col-md-12">
+                                                <div class="col-md-5" >
+                                                    <label for="sel1">ชื่อ-นามสกุล</label>
+                                                    <input type="text"  class="form-control" value="bfsn1234@gmail.com">
+                                                </div><br>
+                                                <div class="col-md-5" style="margin-top:5px">
+                                                    <input type="text"  class="form-control" value="bfsn1234@gmail.com">
+                                                </div> 
+                                                  <div class="col-md-5"style="margin-top:30px"> 
+                                                    <label for="sel1">หมายเลขบัตรประจำตัวประชาชน</label>
+                                                    <input type="text"  class="form-control" value="">
+                                                 </div>  
+                                          </div>
+                                          <div class="col-md-12">
+                                                <div class="col-md-5"style="margin-top:30px" >
+                                                    <label for="sel1">อีเมล์</label>
+                                                    <input type="text"  class="form-control" value="bfsn1234@gmail.com">
+                                                </div>
+                                                <div class="col-md-5"style="margin-top:25px" >
+                                                    <label for="sel1">อีเมล์สำรอง</label>
+                                                    <input type="text"  class="form-control" value="bfsn1234@gmail.com">
+                                                </div> 
+                                                <div class="w3-container"style="margin-top:25px">
+                                                    <div class="col-md-4 alert alert-info font-size-12">
+                                                        อีเมล์นี้ใช้สำหรับรับข้อมูลผู้สนใจและข้อมูลแจ้งเตือน กรุณาตรวจสอบถามถูกต้องอีกครั้ง
+                                                    </div>
+                                                </div>
+                                          </div>
+                                            <div class="col-md-12">
+                                                <div class="col-md-5"style="margin-top:25px" >
+                                                    <label for="sel1">เบอร์มือถือหลัก</label>
+                                                    <input type="text"  class="form-control" value="">
+                                                </div>
+                                                <div class="col-md-5"style="margin-top:25px" >
+                                                    <label for="sel1">เบอร์มือถือสำรอง</label>
+                                                    <input type="text"  class="form-control" value="">
+                                                </div> 
+                                                <div class="w3-container"style="margin-top:25px">
+                                                    <div class="col-md-4 alert alert-info font-size-12">
+                                                       หมายเลขนี้ใช้สำหรับรับข้อมูลผู้สนใจและข้อมูลแจ้งเตือน กรุณาตรวจสอบถามถูกต้องอีกครั้ง
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5"style="margin-top:25px"> 
+                                                    <label for="sel1">หมายเลขบัตรประจำตัวประชาชน</label>
+                                                    <input type="text"  class="form-control" value="">
+                                                 </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                  <div class="col-md-5" style="margin-top:25px">
+                                                    <label for="sel1">ประเทศ</label>
+                                                    <select class="form-control" id="sell-brand">
+                                                        <option>Thailand</option>
+                                                    </select>  
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                            <!-- -->
+                             <div id="password" class="tabcontent">
+                                    <h3>Paris</h3>
+                                    <p>Paris is the capital of France.</p>
+                            </div>
+                            <script>
+                                    function openCity1(evt, cityName) {
+                                        var i, tabcontent, tablinks;
+                                        tabcontent = document.getElementsByClassName("tabcontent");
+                                        for (i = 0; i < tabcontent.length; i++) {
+                                            tabcontent[i].style.display = "none";
+                                        }
+                                        tablinks = document.getElementsByClassName("tablinks");
+                                        for (i = 0; i < tablinks.length; i++) {
+                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                        }
+                                        document.getElementById(cityName).style.display = "block";
+                                        evt.currentTarget.className += " active";
+                                    }
+                            </script>
+                        </div>
+                         <!-- -->
+                         
                         <script>
                             function openCity(cityName) {
                                 var i;
                                 var x = document.getElementsByClassName("city");
                                 for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";  
+                                x[i].style.display = "none";
                                 }
-                                document.getElementById(cityName).style.display = "block";  
+                                document.getElementById(cityName).style.display = "block";
                             }
                         </script>
+                         <!-- -->
                     </div>
-                        
                 </div>
             </div>
          </div>
-        
+
             <div class="panel-footer">
-                <div class="container-fluid">                                            
+                <div class="container-fluid">
                     <ul class="foot-link">
                         <li><a>เกี่ยวกับเรา</a></li>
                         <li><a>ติดต่อเรา</a></li>
@@ -409,4 +507,41 @@
             </div>
         </div>
     </body>
+    <script> 
+        $(document).ready(function(){
+            // ล็อค textboox
+            $("#sell-model").prop('disabled', true);
+           
+              
+
+            // สไลด์แท๊ปย่อย profile
+            $("#profile").click(function(){
+                $("#panel").slideToggle();
+                $(this).css('background-color', '#C8C8C8');
+                $(this).css('color', '#333');
+            });
+
+            // ซ่อนแท๊ปย่อย profile
+            $("#car-list").click(function(){
+                $("#panel").slideUp("slow");
+                $(this).css('background-color', '#C8C8C8');
+                $(this).css('color', '#333');
+            });
+            $("#sell").click(function(){
+                $("#panel").slideUp("slow");
+                $(this).css('background-color', '#C8C8C8');
+                $(this).css('color', '#333');
+            });
+            $("#sell-list").click(function(){
+                $("#panel").slideUp("slow");
+                $(this).css('background-color', '#C8C8C8');
+                $(this).css('color', '#333');
+            });
+
+            // ปลดล็อค textbox
+            $("#sell-brand").change(function() {
+                $("#sell-model").prop('disabled', false);
+            });
+        });
+    </script>
 </html>
