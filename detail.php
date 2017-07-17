@@ -42,43 +42,74 @@
             </div>
     <!--- header --->
     <!--- minor --->
-    <!-- <div class="navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-7">
-            <p class="textmenu">Test</p>
-          </div>
-          <div class="col-sm-4"></div>
+  <!---  <div class="container-fluid">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <div class="textheadcontent">
+          <h5><strong>2008 Proton Gen 2 1.6</strong>
+          <small class="visible-lg" style="color:black;">(ปี 07-12) Medium Line Sedan AT</small></h5>
         </div>
-    </div> -->
+      </div>
+      <div class="col-sm-3 text-right visible-lg">
+        <div class="textheadcontent">
+          <h5><input type="checkbox"> บันทึก <input type="checkbox"> เปรียบเทียบ</h5>
+        </div>
+      </div>
+      <div class="col-sm-2 text-right">
+        <div class="textheadcontent">
+          <h5><strong style="color:red;">149,000 บาท</strong></h5>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <script>
+    window.onscroll = function() {Top()};
+
+    function Top() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("ontop").style.display = "block";
+          } else {
+              document.getElementById("ontop").style.display = "none";
+            }
+    }
+  </script> --->
     <!--- Content --->
+      <!--- Back --->
+      <div class="container-fluid boxback visible-lg">
+        <div class="col-sm-12">
+          <small><a href="#">หน้าแรก</a> / <a href="#">รถเก๋ง</a> / <a href="#">Proton</a> / <a href="#">Gen 2</a> /
+                 <a href="#">ปี 07-12</a> / <a href="#">Medium Line</a>
+          </small>
+        </div>
+      </div>
+      <!--- Back --->
         <!-- Head Content -->
         <div class="container-fluid boxcontenthead">
           <div class="col-sm-5">
             <div>
-              <h5><strong>2008 Proton Gen 2 1.6</strong></h5>
+              <h5 class="visible-lg"><strong>2008 Proton Gen 2 1.6</strong></h5>
+              <p style="font-size: 16px;" class="hidden-lg"><strong>2008 Proton Gen 2 1.6</strong></p>
               <p style="font-size: 14px;" class="visible-lg">(ปี 07-12) Medium Line Sedan AT</p>
             </div>
           </div>
+          <div class="col-sm-4">
+            <div class="textheadcontent text-right visible-lg">
+              <h5><input type="checkbox"> บันทึก <input type="checkbox"> เปรียบเทียบ</h5>
+            </div>
+            <div class="textheadcontent text-left hidden-lg">
+              <p style="font-size: 16px; color:red;"><strong>149,000 บาท</strong></p>
+            </div>
+          </div>
           <div class="col-sm-3">
-            <div class="textheadcontent text-left">
-              <h4><strong style="color:red;">149,000 บาท</strong></h4>
-            </div>
-          </div>
-          <div class="col-sm-2 text-right visible-lg">
-            <div class="textheadcontent">
-              <h2><strong><a href="#"><i class="material-icons" style="color:red;">favorite</i></a></strong></h2>
-            </div>
-          </div>
-          <div class="col-sm-2 text-left visible-lg">
-            <div class="textheadcontent">
-              <h5>เปรียบเทียบ</h5>
+            <div class="textheadcontent text-right">
+              <h4 class="visible-lg"><strong style="color:red;">149,000 บาท</strong></h4>
             </div>
           </div>
         </div>
         <!-- Head Content -->
         <!--- Slideshow Content -->
     <div class="container-fluid boxcontentslide">
+      <div class="visible-lg">
       <div class="w3-content" style="max-width:483px">
           <img class="mySlides" src="http://www.mx7.com/i/223/ROCaU4.jpg" style="width:100%">
           <img class="mySlides" src="http://www.mx7.com/i/04d/89qkER.jpg" style="width:100%">
@@ -114,6 +145,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
     <script>
     var slideIndex = 1;
@@ -203,6 +235,25 @@
         }
       </script>
       <!--- Main Content --->
+    <!--- Content --->
+      <!--- Alert Seller --->
+      <button onclick="topFunction()" id="gettoseller" title="ติดต่อผู้ขาย"><strong>ติดต่อผู้ขาย</strong></button>
+      <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+            document.getElementById("gettoseller").style.display = "block";
+            } else {
+                document.getElementById("gettoseller").style.display = "none";
+              }
+      }
+
+      function topFunction() {
+        window.alert("กรุณาล็อคอินเข้าสู่ระบบเพื่อใช้บริการส่วนนี้");
+      }
+       </script>
+      <!--- Alert Seller --->
       <!--- Footer --->
         <div class="panel-footer">
             <div class="container-fluid">
@@ -215,3 +266,4 @@
     </div>
 </body>
 </html>
+        <!--- Footer --->
