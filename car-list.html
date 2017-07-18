@@ -44,7 +44,7 @@
                     <div class="col-md-12 set-height">
                         <div class="profile-img">
                             <center>
-                             <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                             <i></i>
                              <center>
                         </div>
                         <div>
@@ -57,26 +57,30 @@
 
                     <div  class="col-md-12 non-padding set-tab">
                         <div class="Tool  w3-bar w3-#DDDDDD visible-md visible-lg">
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')" id="car-list"><i class="fa fa-heart" aria-hidden="true"></i> Car list </button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')" id="sell-list"><i class="fa fa-usd" aria-hidden="true"></i> Sell list </button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')" id="sell"><i class="fa fa-car" aria-hidden="true"> Sell </i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')" id="profile"><i class="fa fa-user" aria-hidden="true"> Profile</i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list');clicked(this)" id="car-list"><i class="fa fa-heart" aria-hidden="true"></i> Car list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis');clicked(this)" id="sell-list"><i class="fa fa-usd" aria-hidden="true"></i> Sell list </button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell');clicked(this)" id="sell"><i class="fa fa-car" aria-hidden="true"> Sell </i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile');clicked(this)" id="profile"><i class="fa fa-user" aria-hidden="true"> Profile</i></button>
                         </div>
 
                         <div class="Tool w3-bar w3-#DDDDDD visible-sm visible-xs">
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list')" id="car-list"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis')" id="sell-list"><i class="fa fa-usd" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell')" id="sell"><i class="fa fa-car" aria-hidden="true"></i></button>
-                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile')" id="profile"><i class="fa fa-user" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Car list');clicked(this)" id="car-list-2"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell lis');clicked(this)" id="sell-list-2"><i class="fa fa-usd" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Sell');clicked(this)" id="sell-2"><i class="fa fa-car" aria-hidden="true"></i></button>
+                            <button class="w3-bar-item w3-button set-btn-width" onclick="openCity('Profile');clicked(this)" id="profile-2"><i class="fa fa-user" aria-hidden="true"></i></button>
                         </div>
 
-                        <div class="Tool w3-bar w3-#DDDDDD sec-panel  " id="panel">
+
+                        <div class="Tool w3-bar w3-#DDDDDD sec-panel" id="panel">
+                            <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'general')">ทั่วไป</button>
+                            <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'password')">เปลี่ยนรหัส</button>
+                        </div>
+
+                        <div class="Tool w3-bar w3-#DDDDDD sec-panel" id="panel-2">
                             <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'general')">ทั่วไป</button>
                             <button class="tablinks w3-bar-item w3-button set-btn-sec-width" onclick="openCity1(event, 'password')">เปลี่ยนรหัส</button>
                         </div>
                       
-                     
-
                     <!-- -->
                         <div id="Car list" class="w3-container city">
                              <div class="panel-body">
@@ -231,8 +235,8 @@
                                         <option>Honda</option>
                                         <option>BMW</option>
                                     </select>
-                                    <label for="sel1">รุ่น <p1>*</p1>:</label>
-                                    <select class="form-control" id="sell-model" disabled>
+                                    <label for="sel1"style="margin-top:22px">รุ่น <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-model">
                                         <option>กรุณาเลือก</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -240,8 +244,8 @@
                                         <option>4</option>
                                         <option>Camry</option>
                                     </select>
-                                    <label for="sel1">ปีที่ผลิต <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <label for="sel1"style="margin-top:22px">ปีที่ผลิต <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-year">
                                         <option>กรุณาเลือก</option>
                                         <option>2014</option>
                                         <option>2015</option>
@@ -249,25 +253,31 @@
                                         <option>2017</option>
                                         <option>2018</option>
                                     </select>
-                                    <label for="sel1">ระบบเกียร์ <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <label for="sel1"style="margin-top:22px">ระบบเกียร์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-gear">
                                         <option>กรุณาเลือก</option>
                                         <option>กระปุก</option>
                                         <option>automatic</option>
                                     </select>
-                                    <label for="sel1">โฉมรถยนต์ <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <label for="sel1"style="margin-top:22px">ความจุเครื่องยน์ (CC) <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-capacity">
+                                        <option>กรุณาเลือก</option>
+                                        <option>2.0</option>
+                                        <option>2.5</option>
+                                    </select>
+                                    <label for="sel1"style="margin-top:22px">โฉมรถยนต์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-makeover">
                                         <option>กรุณาเลือก</option>
                                         <option>(ปี 12-16)</option>
                                     </select>
-                                    <label for="sel1">รายละเอียดรุ่น <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <label for="sel1"style="margin-top:22px">รายละเอียดรุ่น <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-Description">
                                         <option>กรุณาเลือก</option>
                                         <option>Hybrid</option>
                                         <option>G</option>
                                     </select>
-                                        <label for="sel1">เลขไมล์ <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                        <label for="sel1"style="margin-top:22px">เลขไมล์ <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-mile">
                                         <option>กรุณาเลือก</option>
                                         <option>อื่นๆ</option>
                                         <option>0-5k</option>
@@ -276,8 +286,8 @@
                                         <option>20-25k</option>
                                         <option>30-35k</option>
                                     </select>
-                                        <label for="sel1">ปีที่จดทะเบียน *:</label>
-                                    <select class="form-control" id="">
+                                        <label for="sel1"style="margin-top:22px">ปีที่จดทะเบียน *:</label>
+                                    <select class="form-control" id="sell-year1">
                                         <option>กรุณาเลือก</option>
                                         <option>2016</option>
                                         <option>2015</option>
@@ -285,8 +295,8 @@
                                         <option>2013</option>
                                         <option>2012</option>
                                     </select>
-                                    <label for="sel1">สี <p1>*</p1>:</label>
-                                    <select class="form-control" id="">
+                                    <label for="sel1"style="margin-top:22px">สี <p1>*</p1>:</label>
+                                    <select class="form-control" id="sell-color">
                                         <option>กรุณาเลือก</option>
                                         <option>สีขาว</option>
                                         <option>สีทอง</option>
@@ -305,11 +315,11 @@
                                         <option>สีม่วง</option>
                                         <option>สีอื่นๆ</option>
                                     </select><br><br><br>
-                                    <label for="sel1">ราคาที่ต้องการขาย <p1>*</p1>:</label>
+                                    <label for="sel1"style="margin-top:22px">ราคาที่ต้องการขาย <p1>*</p1>:</label>
                                     <input type="text"  class="form-control" value="กรุณากรอกราคา"><br>
                                     <label for="sel1">ข้อความโฆษณารถของคุณ <p1>*</p1>:</label><br>
                                      <textarea>ข้อความ....</textarea>
-                                       <label for="sel1">พื้นที่ *:</label>
+                                       <label for="sel1"style="margin-top:30px">พื้นที่ *:</label>
                                     <select class="form-control" id=""><br>
                                         <option>กรุณาเลือก</option>
                                         <option>กรุงเพทและปริมณฑล</option>
@@ -460,8 +470,19 @@
                             </div>
                             <!-- -->
                              <div id="password" class="tabcontent">
-                                    <h3>Paris</h3>
-                                    <p>Paris is the capital of France.</p>
+                                   <form>
+                                       <div class="col-md-12">
+                                            <div class="col-md-5">
+                                                <label for="sel1">รหัสปัจจุบัน</label>
+                                                <input type="password"  class="form-control" value="bfsn1234@gmail.com"><br>
+                                                 <label for="sel1">รหัสผ่านใหม่</label>
+                                                <input type="password"  class="form-control" value="bfsn1234@gmail.com"><br>
+                                                 <label for="sel1">ยืนยันรหัส</label>
+                                                <input type="password"  class="form-control" value="bfsn1234@gmail.com"><br>
+                                                <button type="button" class="btn btb-info">เปลี่ยนรหัส</button><br><br>
+                                            </div>    
+                                        </div> 
+                                   </form>>
                             </div>
                             <script>
                                     function openCity1(evt, cityName) {
@@ -511,37 +532,76 @@
         $(document).ready(function(){
             // ล็อค textboox
             $("#sell-model").prop('disabled', true);
+            $("#sell-year").prop('disabled', true);
+            $("#sell-gear").prop('disabled', true);
+            $("#sell-capacity").prop('disabled', true);
+            $("#sell-makeover").prop('disabled', true);
+            $("#sell-Description").prop('disabled', true);
+            $("#sell-mile").prop('disabled', true);
+            $("#sell-color").prop('disabled', true);
+            
+           
            
               
 
             // สไลด์แท๊ปย่อย profile
             $("#profile").click(function(){
                 $("#panel").slideToggle();
-                $(this).css('background-color', '#C8C8C8');
-                $(this).css('color', '#333');
+            });
+            $("#profile-2").click(function(){
+                $("#panel-2").slideToggle();
             });
 
             // ซ่อนแท๊ปย่อย profile
             $("#car-list").click(function(){
                 $("#panel").slideUp("slow");
-                $(this).css('background-color', '#C8C8C8');
-                $(this).css('color', '#333');
             });
             $("#sell").click(function(){
                 $("#panel").slideUp("slow");
-                $(this).css('background-color', '#C8C8C8');
-                $(this).css('color', '#333');
             });
             $("#sell-list").click(function(){
                 $("#panel").slideUp("slow");
-                $(this).css('background-color', '#C8C8C8');
-                $(this).css('color', '#333');
+            });
+            
+        // ------     
+            $("#car-list-2").click(function(){
+                $("#panel-2").slideUp("slow");
+            });
+            $("#sell-2").click(function(){
+                $("#panel-2").slideUp("slow");
+            });
+            $("#sell-list-2").click(function(){
+                $("#panel-2").slideUp("slow");
             });
 
             // ปลดล็อค textbox
             $("#sell-brand").change(function() {
                 $("#sell-model").prop('disabled', false);
             });
+            $("#sell-model").change(function() {
+                $("#sell-year").prop('disabled', false);
+            });
+            $("#sell-year").change(function() {
+                $("#sell-gear").prop('disabled', false);
+            });
+            $("#sell-gear").change(function() {
+                $("#sell-capacity").prop('disabled', false);
+            });
+            $("#sell-capacity").change(function() {
+                $("#sell-makeover").prop('disabled', false);
+            });
+             $("#sell-makeover").change(function() {
+                $("#sell-Description").prop('disabled', false);
+            });
+            $("#sell-Description").change(function() {
+                $("#sell-mile").prop('disabled', false);
+            });
+            $("#sell-mile").change(function() {
+                $("#sell-color").prop('disabled', false);
+            });
+            
+            
+            
         });
     </script>
 </html>

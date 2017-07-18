@@ -19,8 +19,15 @@ body {
 
 .set-height{
     height: 25vh;
-    background-color: wheat;
+    background-image:url('1.jpg');
     border: 1px solid #DDDDDD;
+    background-Repeat: no-repeat;
+    background-Position: center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
    
 }
 
@@ -35,14 +42,23 @@ body {
 }
 .name {
     margin-top: 2px !important;
+    color: #F8F8F8;
 }
 
 .profile-img{
     background-color: #fff;
     width: 100px;
     height: 100px;
-    border: 1px solid #DDDDDD;
+    border: 6px solid #fff;
     margin-top: 5px;
+    background-image:url('2.jpg');
+    background-Repeat: no-repeat;
+    background-Position: center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
 }
 
 .navbar-toggle-center {
