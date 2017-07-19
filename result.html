@@ -36,13 +36,18 @@
                 </nav>
             </div>
             <div class="panel-body">
+                <div class="container-fluid history visible-lg visible-md">
+                    <div>
+                        <a href="">หน้าแรก</a><i> > </i><a href="">ไม่เกิน 200,000</a>
+                    </div>
+                </div>
                 <div class="container-fluid">
                     <div class="col-md-3 filter non-padding">
                         <div class="search-header visible-md visible-lg">
                             <h3>ค้นหา</h3>
                         </div>
                         <div class="visible-md visible-lg set-filter">
-                            <div style="margin-top:30px;">
+                            <div>
                                 <h4>ประเภท</h4>
                                 <div>
                                     <div>
@@ -53,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="margin-top:30px;">
+                            <div>
                                 <h4>ยี่ห้อ</h4>
                                 <div>
                                     <div>
@@ -79,7 +84,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="margin-top:30px;">
+                            <div>
                                 <h4>ภาค</h4>
                                 <div>
                                     <div>
@@ -91,10 +96,10 @@
                                     <div>
                                          <input type="checkbox" id="location-3"><label for="location-3">ภาคเหนือ</label>
                                     </div>
-                                   <div>
+                                    <div>
                                         <input type="checkbox" id="location-4"><label for="location-4">ภาคใต้</label>
-                                   </div>
-                                   <div>
+                                    </div>
+                                    <div>
                                          <input type="checkbox" id="location-5"><label for="location-5">ภาคตะวันออก</label>
                                     </div>
                                     <div>
@@ -102,38 +107,54 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="margin: 30px 0;">
+                            <div>
                                 <h4>กำหนดช่วงราคาเฉพาะ</h4>
                                 <div>
-                                    <label class="non-margin">ตั้งแต่</label>
-                                    <select>
-                                        <option value="" selected>100,000</option>
-                                        <option value="">120,000</option>
-                                        <option value="">140,000</option>
-                                        <option value="">160,000</option>
-                                        <option value="">180,000</option>
-                                    </select>
-                                    <label>บาท</label>
+                                    <div class="form-group">
+                                        <div class="form-inline">
+                                            <label class="non-margin">ตั้งแต่</label>
+                                            <select class="form-control" style="width: 50%;margin-left: 10px">
+                                                <option value="" selected>100,000</option>
+                                                <option value="">120,000</option>
+                                                <option value="">140,000</option>
+                                                <option value="">160,000</option>
+                                                <option value="">180,000</option>
+                                            </select>
+                                            <label>บาท</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-inline">
+                                            <label class="non-margin">จนถึง</label>
+                                            <select class="form-control" style="width: 50%;margin-left: 10px">
+                                                <option value="">120,000</option>
+                                                <option value="">140,000</option>
+                                                <option value="">160,000</option>
+                                                <option value="">180,000</option>
+                                                <option value="" selected>200,000</option>
+                                            </select>
+                                            <label>บาท</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label class="non-margin">จนถึง </label>
-                                    <select>
-                                        <option value="">120,000</option>
-                                        <option value="">140,000</option>
-                                        <option value="">160,000</option>
-                                        <option value="">180,000</option>
-                                        <option value="" selected>200,000</option>
-                                    </select>
-                                    <label>บาท</label>
+                            </div>
+                            <div>
+                                <h4>เลขไมล์</h4>
+                                <div class="form-group">
+                                    <div class="form-inline">
+                                        <label class="non-margin">เลขไมล์ไม่เกิน</label>
+                                        <input type="number" name="" class="form-control" value="" style="margin-left:10px" min="0" id="mile-value">
+                                        <label>กม.</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div id="sticky-anchor"></div>
                         <div class="container visible-xs visible-sm col-md-12 row filter non-margin" id="sticky">
                             <div class="col-xs-6">
-                                <a data-toggle="modal" data-target="#search"><button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i> ค้นหา</button></a>
+                                <a data-toggle="modal" data-target="#search"><button type="button" class="btn"><i class="icon-search"></i>ค้นหา</button></a>
 
-                                <div class="modal fade" id="search" role="dialog">
+                                <div class="modal modal-fullscreen" id="search" role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -239,9 +260,9 @@
                                 </div>
                             </div>
                             <div class="col-xs-6">
-                                <a data-toggle="modal" data-target="#filter"><button type="button" class="btn"><i class="fa fa-filter" aria-hidden="true"></i> จัดเรียง</button></a>
+                                <a data-toggle="modal" data-target="#filter"><button type="button" class="btn"><i class="icon-filter"></i> จัดเรียง</button></a>
 
-                                <div class="modal fade" id="filter" role="dialog">
+                                <div class="modal modal-fullscreen" id="filter" role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -297,17 +318,18 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
                                 <div class="col-md-12 row detail">
                                     <div class="col-xs-4 text-center text-detail">
                                         <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
                                     <div class="col-xs-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>อุดรธานี</p>
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
                                     <div class="col-xs-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
                                 <div class="col-md-12 row non-margin save">
@@ -330,26 +352,31 @@
                         </div>
                         <div class="col-md-12 car-list row">
                             <div class="col-md-3 text-center">
-                                <img src="img/car_2.jpeg" class="exam-img">
+                                <img src="img/car_1.jpg" class="exam-img">
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>70,000 km</p>
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>เชียงใหม่</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>&nbsp;เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>&nbsp;บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
@@ -363,31 +390,36 @@
                         </div>
                         <div class="col-md-12 car-list row">
                             <div class="col-md-3 text-center">
-                                <img src="img/car_3.jpeg" class="exam-img">
+                                <img src="img/car_1.jpg" class="exam-img">
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>40,000 km</p>
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>ขอนแก่น</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์ธรรมดา</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
                                 <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>135,000 บาท</h3>
+                                    <h3>130,000 บาท</h3>
                                 </div>
                                 <div class="col-md-12 col-xs-6 non-padding">
                                     <button type="button" class="btn">ติดต่อผู้ขาย</button>
@@ -400,60 +432,32 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
                                         <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>กรุงเทพ</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
                                 <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>150,000 บาท</h3>
-                                </div>
-                                <div class="col-md-12 col-xs-6 non-padding">
-                                    <button type="button" class="btn">ติดต่อผู้ขาย</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 car-list row">
-                            <div class="col-md-3 text-center">
-                                <img src="img/car_2.jpeg" class="exam-img">
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
-                                </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>100,000 km</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>มุกดาหาร</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>&nbsp;เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>&nbsp;บันทึก</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center-min">
-                                <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>159,999 บาท</h3>
+                                    <h3>130,000 บาท</h3>
                                 </div>
                                 <div class="col-md-12 col-xs-6 non-padding">
                                     <button type="button" class="btn">ติดต่อผู้ขาย</button>
@@ -466,93 +470,32 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
                                         <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>ราชบุรี</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
                                 <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>160,000 บาท</h3>
-                                </div>
-                                <div class="col-md-12 col-xs-6 non-padding">
-                                    <button type="button" class="btn">ติดต่อผู้ขาย</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 car-list row">
-                            <div class="col-md-3 text-center">
-                                <img src="img/car_2.jpeg" class="exam-img">
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
-                                </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>สงขลา</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>&nbsp;เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>&nbsp;บันทึก</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center-min">
-                                <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>165,000 บาท</h3>
-                                </div>
-                                <div class="col-md-12 col-xs-6 non-padding">
-                                    <button type="button" class="btn">ติดต่อผู้ขาย</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 car-list row">
-                            <div class="col-md-3 text-center">
-                                <img src="img/car_3.jpeg" class="exam-img">
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
-                                </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>อุดรธานี</p>
-                                    </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>บันทึก</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center-min">
-                                <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>165,999 บาท</h3>
+                                    <h3>130,000 บาท</h3>
                                 </div>
                                 <div class="col-md-12 col-xs-6 non-padding">
                                     <button type="button" class="btn">ติดต่อผู้ขาย</button>
@@ -565,27 +508,32 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>95,000 km</p>
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>ปัตตานี</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์ธรรมดา</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
                                 <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>170,000 บาท</h3>
+                                    <h3>130,000 บาท</h3>
                                 </div>
                                 <div class="col-md-12 col-xs-6 non-padding">
                                     <button type="button" class="btn">ติดต่อผู้ขาย</button>
@@ -594,31 +542,36 @@
                         </div>
                         <div class="col-md-12 car-list row">
                             <div class="col-md-3 text-center">
-                                <img src="img/car_2.jpeg" class="exam-img">
+                                <img src="img/car_1.jpg" class="exam-img">
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <h4>2012 Honda Civic 1.8 FB (ปี 12-16) E Sedan - AT</h4>
+                                    <h3 class="visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h3>
+                                    <h4 class="visible-md visible-sm visible-xs">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
                                 </div>
-                                <div class="hidden-xs col-md-12 non-padding">
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-gauge-1"></i><p>75,000 km</p>
+                                <div class="col-md-12 row detail">
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-gauge-1"></i><p>50,000 km</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-location-6"></i></i><p>ระยอง</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-location-6"></i><p>อุดรธานี</p>
                                     </div>
-                                    <div class="col-md-4 text-center text-detail">
-                                        <i class="icon-params"></i></i><p>เกียร์อัตโนมัติ</p>
+                                    <div class="col-xs-4 text-center text-detail">
+                                        <i class="icon-params"></i><p>เกียร์อัตโนมัติ</p>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <input type="checkbox" name="" value=""><label>&nbsp;เปรียบเทียบ</label>
-                                    <input type="checkbox" name="" value="" style="margin-left:15px"><label>&nbsp;บันทึก</label>
+                                <div class="col-md-12 row non-margin save">
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>เปรียบเทียบ</label>
+                                    </div>
+                                    <div class="col-xs-6 text-center non-padding">
+                                        <input type="checkbox" name="" value=""><label>บันทึก</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center-min">
                                 <div class="col-md-12 col-xs-6 non-padding price">
-                                    <h3>180,000 บาท</h3>
+                                    <h3>130,000 บาท</h3>
                                 </div>
                                 <div class="col-md-12 col-xs-6 non-padding">
                                     <button type="button" class="btn">ติดต่อผู้ขาย</button>
@@ -626,8 +579,66 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 visible-lg visible-md filter">
-
+                    <div class="col-md-3 last non-padding visible-md visible-lg">
+                        <div class="last-header">
+                            <h4>รถที่พึ่งดูไปล่าสุด</h4>
+                        </div>
+                        <div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-4 row last-view non-padding">
+                                <div class="col-md-4">
+                                    <img src="./img/car_2.jpeg" class="exam-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4 class="visible-md visible-lg">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h4>
+                                    <h5 class="visible-xs visible-sm">2012 Honda Civic FB (ปี 12-16) E 1.8 AT Sedan</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -686,5 +697,29 @@
           obj.className = obj.className.replace(' codesOn', '');
         }
       }
+    </script>
+    <script>
+        $(".modal-fullscreen").on('show.bs.modal', function () {
+                setTimeout( function() {
+                    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+                }, 0);
+            });
+            $(".modal-fullscreen").on('hidden.bs.modal', function () {
+            $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+        });
+    </script>
+    <script>
+        // Select your input element.
+        var numInput = document.getElementById('mile-value');
+
+        // Listen for input event on numInput.
+        numInput.addEventListener('mile-value', function(){
+            // Let's match only digits.
+            var num = this.value.match(/^\d+$/);
+            if (num === null) {
+                // If we have no match, value will be empty.
+                this.value = "";ห
+            }
+        }, false)
     </script>
 </html>
